@@ -89,6 +89,7 @@ class Carousel {
 
     }
 }
+
 document.addEventListener('DOMContentLoaded', function () {
 
     new Carousel(document.querySelector('#carousel1'), {
@@ -100,6 +101,14 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
 
     new Carousel(document.querySelector('#carousel2'), {
+        slidesVisible: 4,
+        slidesToScroll: 1,
+        loop: true
+    })
+})
+document.addEventListener('DOMContentLoaded', function () {
+
+    new Carousel(document.querySelector('#carousel3'), {
         slidesVisible: 4,
         slidesToScroll: 1,
         loop: true
