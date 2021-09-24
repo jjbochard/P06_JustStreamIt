@@ -1,12 +1,12 @@
 function setup_modal() {
     // Get the modal
-    var modal = document.getElementById("modal");
+    let modal = document.getElementById("modal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("open-modal");
+    let btn = document.getElementById("open-modal");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    let span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
@@ -27,7 +27,7 @@ function setup_modal() {
 }
 
 function fill_modal() {
-    var modal = document.getElementById("modal");
+    let modal = document.getElementById("modal");
 
     let images = document.querySelectorAll('.car_img')
 
