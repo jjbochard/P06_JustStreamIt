@@ -13,27 +13,38 @@
         <img src="logo.png" alt="logo">
     </header>
     <h1>Movies</h1>
-    <div id="best-movie">
-        <img class="best-movie-img" />
+    <div class="best-movie">
+        <div class="best-movie-info">
+            <p id="best-movie-title"></p>
+            <p id="movie-description"></p>
+            <button class="btn-best-movie-more-info">More infos</button>
+        </div>
+        <div class="best-movie-img"></div>
     </div>
-    <button id="open-modal">Open Modal</button>
     </div>
     <div id="modal" class="modal">
         <div class="modal-content">
-            <p id="movie-title"></p>
-            <p id="movie-genre"></p>
-            <p id="movie-date-published"></p>
-            <p id="movie-rated"></p>
-            <p id="movie-imdb-score"></p>
-            <p id="movie-directors"></p>
-            <p id="movie-actors"></p>
-            <p id="movie-duration"></p>
-            <p id="movie-countries"></p>
-            <p id="movie-box-office"></p>
-            <p id="movie-description"></p>
+            <div class="main-movie-infos">
+                <div class="img_container">
+                </div>
+                <p id="movie-title"></p>
+                <p id="movie-genre"></p>
+                <p id="movie-date-published"></p>
+            </div>
+            <div class="other-movie-infos">
+                <p id="movie-description"></p>
+                <p id="movie-rated"></p>
+                <p id="movie-imdb-score"></p>
+                <p id="movie-directors"></p>
+                <p id="movie-actors"></p>
+                <p id="movie-duration"></p>
+                <p id="movie-countries"></p>
+                <p id="movie-box-office"></p>
+            </div>
             <span class="close">&times;</span>
         </div>
     </div>
+    <h1>Best rated movies</h1>
     <div class="container">
         <div id="carousel1">
             <div class="item">
@@ -80,7 +91,7 @@
             </div>
         </div>
     </div>
-
+    <h1>Best horror movies</h1>
     <div class="container">
         <div id="carousel2">
             <div class="item">
@@ -127,7 +138,7 @@
             </div>
         </div>
     </div>
-
+    <h1>Best music movies</h1>
     <div class="container">
         <div id="carousel3">
             <div class="item">

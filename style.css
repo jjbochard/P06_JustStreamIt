@@ -1,3 +1,10 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header, .h1{
+  text-align: center;
+}
 /* The Modal (background) */
 .modal {
   display: none;
@@ -5,8 +12,8 @@
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  width: 50%; /* Full width */
-  height: 50%; /* Full height */
+  width: 100%; /* Full width */
+  height: 100%; /*Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -15,15 +22,20 @@
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
+  /* top: 50%;
+  left: 50%; */
+  padding: 1rem 1.5rem;
+  border: 0px solid #888;
+  border-radius: 0.5rem;
   width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+  margin: auto;
+  margin-top: 15%;
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: rgb(255, 5, 5);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -41,7 +53,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100px;
   position: relative;
   margin: auto;
 }
@@ -132,10 +144,13 @@
   to {opacity: 1}
 }
 
-
 .item img {
-    width: 100%;
+  width: 50%;
 }
+.item div{
+  text-align: center;
+}
+
 /* Carousel */
 
 .carousel {
@@ -181,4 +196,22 @@ left: -20px;
 
 .carousel__next--hidden, .carousel__next--hidden{
     opacity: 0;
+}
+
+.best_img {
+height: 400px;
+object-fit: cover;
+width: 100%;
+}
+.best-movie{
+  overflow: hidden;
+}
+.best-movie-info{
+  float: left;
+  width: 30%;
+}
+
+.best-movie-img{
+  float:right;
+  width: 70%;
 }
