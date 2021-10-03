@@ -12,7 +12,7 @@ function setup_modal() {
 }
 function fill_modal_best_movie() {
     let modal = document.getElementById("modal")
-    let btn = document.getElementById("open-modal")
+    let btn = document.getElementsByClassName("btn-best-movie-more-info")[0]
     let image = document.querySelector(".best_img")
 
     let modal_image = document.querySelector(".img_container")

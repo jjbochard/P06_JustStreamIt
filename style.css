@@ -145,7 +145,7 @@ header, .h1{
 }
 
 .item img {
-  width: 50%;
+  width: 85%;
 }
 .item div{
   text-align: center;
@@ -179,7 +179,7 @@ header, .h1{
     border-radius: 50%;
     top: 50%;
     margin-top: -20px;
-    right: -20px;
+    right: 0px;
     cursor: pointer;
     transition: transform 0.3s, opacity 0.3s;
 }
@@ -191,7 +191,7 @@ header, .h1{
 .carousel__prev {
 background: #FFFF url(left-arrow.png) center center no-repeat;
 right: auto;
-left: -20px;
+left: 0px;
 }
 
 .carousel__next--hidden, .carousel__next--hidden{
