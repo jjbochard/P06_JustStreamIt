@@ -14,6 +14,7 @@ function fill_modal_best_movie() {
     let modal = document.getElementById("modal")
     let btn = document.getElementsByClassName("btn-best-movie-more-info")[0]
     let image = document.querySelector(".best_img")
+    console.log(image)
 
     let modal_image = document.querySelector(".img_container")
     let title = document.querySelector("#movie-title")
@@ -36,7 +37,9 @@ function fill_modal_best_movie() {
                 }
             })
             .then(function (value) {
-                modal_image.innerHTML += `<img class="modal_img" "src="${value.image_url}/>"`
+                modal_image.innerHTML = `
+                <img class="modal_img" id="${value.id}" src="${value.image_url}"/>
+                `
                 title.textContent = value.original_title
                 genre.textContent = value.genres.join(" - ")
                 publishedDate.textContent = date(value.date_published)
@@ -83,7 +86,9 @@ function fill_modal_carousel() {
                     }
                 })
                 .then(function (value) {
-                    modal_image.innerHTML += `<img class="modal_img" "src="${value.image_url}/>"`
+                    modal_image.innerHTML = `
+                    <img class="modal_img" id="${value.id}" src="${value.image_url}"/>
+                    `
                     title.textContent = value.original_title
                     genre.textContent = value.genres.join(" - ")
                     publishedDate.textContent = date(value.date_published)

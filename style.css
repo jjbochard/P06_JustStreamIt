@@ -1,12 +1,17 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: black;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 header, .h1{
   text-align: center;
 }
 /* The Modal (background) */
 .modal {
+  color: black;
   display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -27,10 +32,10 @@ header, .h1{
   padding: 1rem 1.5rem;
   border: 0px solid #888;
   border-radius: 0.5rem;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
   height: auto;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 /* The Close Button */
@@ -214,4 +219,7 @@ width: 100%;
 .best-movie-img{
   float:right;
   width: 70%;
+}
+img[alt="logo"]{
+  filter: invert(100%);
 }
