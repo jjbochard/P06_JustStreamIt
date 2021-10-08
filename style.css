@@ -208,18 +208,27 @@ height: 400px;
 object-fit: cover;
 width: 100%;
 }
-.best-movie{
+.best-movie, .main-movie-infos{
   overflow: hidden;
 }
-.best-movie-info{
+.best-movie-info, .main-movie-img{
   float: left;
   width: 30%;
 }
 
-.best-movie-img{
+.best-movie-img, .main-movie-other-infos{
   float:right;
   width: 70%;
 }
+
 img[alt="logo"]{
   filter: invert(100%);
+}
+.main-movie-img{
+  display: flex;
+  justify-content: center;
+}
+.main-movie-infos .main-movie-other-infos {
+  position: relative;
+  top: 50%
 }

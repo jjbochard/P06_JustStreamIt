@@ -16,4 +16,4 @@ function getBestMovieInfo() {
 
 setTimeout(function () {
     getBestMovieInfo()
-}, 300)
+}, 500)

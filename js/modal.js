@@ -44,12 +44,12 @@ function fill_modal_best_movie() {
                 genre.textContent = value.genres.join(" - ")
                 publishedDate.textContent = date(value.date_published)
                 rated.textContent = value.rated
-                imdb_score.textContent = value.imdb_score + " / 10"
+                imdb_score.textContent = "Score IMDB: " + value.imdb_score + " / 10"
                 directors.textContent = "Directed by : " + value.directors.join(", ")
                 actors.textContent = "With " + value.actors.join(", ")
                 duration.textContent = value.duration + " min"
                 countries.textContent = value.countries.join(" - ")
-                boxOffice.textContent = value.worldwide_gross_income
+                boxOffice.textContent = income(value.worldwide_gross_income)
                 description.textContent = value.long_description
             })
             .catch(function (err) {
@@ -93,12 +93,12 @@ function fill_modal_carousel() {
                     genre.textContent = value.genres.join(" - ")
                     publishedDate.textContent = date(value.date_published)
                     rated.textContent = value.rated
-                    imdb_score.textContent = value.imdb_score + " / 10"
+                    imdb_score.textContent = "Score IMDB: " + value.imdb_score + " / 10"
                     directors.textContent = "Directed by : " + value.directors.join(", ")
                     actors.textContent = "With " + value.actors.join(", ")
                     duration.textContent = value.duration + " min"
                     countries.textContent = value.countries.join(" - ")
-                    boxOffice.textContent = value.worldwide_gross_income
+                    boxOffice.textContent = income(value.worldwide_gross_income)
                     description.textContent = value.long_description
                 })
                 .catch(function (err) {
@@ -113,6 +113,17 @@ function date(rawDate) {
     splitDate = rawDate.split("-")
     console.log()
     return splitDate[2] + "/" + splitDate[1] + "/" + splitDate[0]
+
+}
+function income(rawIncome) {
+    if (rawIncome == null) {
+        income = "There is no income informatiom yet"
+    }
+    else {
+        income = "Box office: " + rawIncome + " $"
+    }
+    return income
+
 
 }
 setup_modal()
