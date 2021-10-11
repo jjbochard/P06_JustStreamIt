@@ -21,8 +21,8 @@ The second contains 3 carousels with 7 movie images each. Each carousels contain
 
 The third contains all movie informations.
 
-To display the modal with the informations corresponding to a movie, you have to click on the buton "More infos" for the best movie or on the image of the movie in the carousels for the others.
-To close it, you have to click on the buton with the red cross
+To display the modal with the informations corresponding to a movie, you have to click on the button "More infos" for the best movie or on the image of the movie in the carousels for the others.
+To close it, you have to click on the button with the red cross
 
 The informations come from a dedicated API 
 
