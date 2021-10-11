@@ -44,6 +44,9 @@ header, .h1{
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: absolute;
+  right: 15%;
+  top: 9%;
 }
 
 .close:hover,
